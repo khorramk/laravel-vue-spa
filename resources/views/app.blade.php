@@ -18,7 +18,6 @@
 				</router-link>
 			</h1>
 		</header>
-
 		<div class="section pb-10">
 			<div class="container">
 				<main class="flex">
