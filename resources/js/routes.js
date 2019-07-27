@@ -6,7 +6,8 @@ import Mascot from './components/Mascot';
 import Illustrations from './components/Illustrations';
 import Wallpapers from './components/Wallpapers';
 import NotFound from './components/NotFound';
-import Home from './components/Home';   
+import Home from './components/Home'; 
+import About from './components/About';  
 let LoadersAndAnimations = () =>
     import(/* webpackChunkName: "loaders-and-animations.bundle" */ './components/LoadersAndAnimations');
 
@@ -17,12 +18,7 @@ export default {
 
     routes: [
         {
-            path: '*',
-            component: NotFound
-        },
-
-        {
-            path: '/',
+            path: '/Logo',
             component: Logo
         },
 
@@ -61,8 +57,12 @@ export default {
             component: Wallpapers
         },
         {
-            path: '/home',
+            path: '/',
             component: Home
+        },
+        {
+            path: '/about',
+            component: About
         }
     ]
 };

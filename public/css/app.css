@@ -6212,6 +6212,10 @@ p {
  * @import "utilities/skew-transforms";
  */
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/assets', function () {
+Route::get('/{any?}', function () {
     return view('app');
 });

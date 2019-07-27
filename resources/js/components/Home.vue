@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Home</p>
+        <h1>Home</h1>
     </div>
 </template>
 
@@ -8,9 +8,12 @@
     export default {
         data() {
             return {
-                key: value
+            
             }
         },
+        mounted(){
+            console.log('home mounted');
+        }
     }
 </script>
 

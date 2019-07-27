@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="contianer" id="app">
-        
+        <router-view></router-view>
     </div>
 </body>
 </html>
