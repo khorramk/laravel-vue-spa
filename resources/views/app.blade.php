@@ -11,45 +11,44 @@
 
 <body class="font-sans">
 	<div id="app">
-		<div class="container mx-auto">
-			<header class="py-6 mb-8">
+		<header class="py-6 px-8 mb-8" style="background: url('/images/splash.svg') 0 15px no-repeat;">
 				<h1>
 				   <img class="img-fluid" src="/images/logo.svg" alt="logo">
-				
 				</h1>
-			</header>
+		</header>
+		<div class="container px-8">
 			<main class="flex">
-				<aside class="w-1/5">
-					<section class="mb-6">
-						<h5 class="uppercase font-bold mb-3">Brand</h5>
+				<aside class="w-1/5 pt-8">
+					<section class="mb-10 ">
+						<h5 class="uppercase font-bold mb-3 text-base">Brand</h5>
 						<ul class="list-reset" >
 							<li class="text-sm leading-loose">
-								<router-link class="text-black" to="/">Home</router-link>
+								<router-link class="text-black"  to="/" exact>Home</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black" to="/about">About</router-link>
+								<router-link class="text-black"  to="/about">About</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black" to="/Logo">Logo</router-link>
+								<router-link class="text-black"  to="/Logo">Logo</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black" to="/Logo-symbol">Logo-symbol</router-link>
+								<router-link class="text-black"  to="/Logo-symbol">Logo-symbol</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black" to="/Colors">Colors</router-link>
+								<router-link class="text-black"  to="/Colors">Colors</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black" to="/Typography">Typography</router-link>
+								<router-link class="text-black"  to="/Typography">Typography</router-link>
 							</li>
 						</ul >
 					</section>
 					<section>
-						<h5 class="uppercase font-bold mb-3">Doodles</h5>
+						<h5 class="uppercase font-bold mb-3 text-base">Doodles</h5>
 						<ul  class="list-reset">
-							<li class="text-sm leading-loose"><router-link class="text-black" to="/1">Mascots</router-link></li>
-							<li class="text-sm leading-loose"><router-link class="text-black" to="/1">Illustrations</router-link></li>
-							<li class="text-sm leading-loose"><router-link class="text-black" to="/1">Illustrations</router-link></li>
-							<li class="text-sm leading-loose"><router-link class="text-black" to="/1">Illustrations</router-link></li>
+							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">Mascots</router-link></li>
+							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">Illustrations</router-link></li>
+							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">Loaders</router-link></li>
+							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">animations</router-link></li>
 							
 						</ul>
 					</section>

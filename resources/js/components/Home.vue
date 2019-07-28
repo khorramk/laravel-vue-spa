@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>Home</h1>
-    </div>
+        <h1 class="font-normal text-3xl text-grey-darkest leading-none">Full Logo</h1>
 </template>
 
 <script>

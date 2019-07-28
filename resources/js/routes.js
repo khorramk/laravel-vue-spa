@@ -18,6 +18,10 @@ export default {
 
     routes: [
         {
+            path: '*',
+            component: NotFound
+        },
+        {
             path: '/Logo',
             component: Logo
         },
