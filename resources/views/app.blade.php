@@ -16,9 +16,9 @@
 				   <img class="img-fluid" src="/images/logo.svg" alt="logo">
 				</h1>
 		</header>
-		<div class="container px-8">
+		<div class="container px-8 pb-10">
 			<main class="flex">
-				<aside class="w-1/5 pt-8">
+				<aside class="w-64 pt-8">
 					<section class="mb-10 ">
 						<h5 class="uppercase font-bold mb-3 text-base">Brand</h5>
 						<ul class="list-reset" >
@@ -41,6 +41,7 @@
 								<router-link class="text-black"  to="/Typography">Typography</router-link>
 							</li>
 						</ul >
+
 					</section>
 					<section>
 						<h5 class="uppercase font-bold mb-3 text-base">Doodles</h5>
@@ -51,6 +52,12 @@
 							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">animations</router-link></li>
 							
 						</ul>
+						<h5 class="uppercase font-bold mb-3 text-base">Stats</h5>
+						<ul class="list-reset" >
+							<li class="text-sm leading-loose">
+								<router-link class="text-black"  to="/site-stats">Site-stats</router-link>
+							</li>
+						</ul >
 					</section>
 				</aside>
 				<div class="primary flex-1">
