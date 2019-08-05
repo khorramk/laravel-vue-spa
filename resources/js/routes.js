@@ -13,7 +13,7 @@ import Clients from './components/passport/Clients';
 import Authorized from './components/passport/AuthorizedClients';
 import PersonalAccessTokens from './components/passport/personalAccessTokens';
 import CreateClients from './components/passport/CreateClients';
-
+import UpdateClients from './components/passport/UpdateClients'
 let LoadersAndAnimations = () =>
     import(/* webpackChunkName: "loaders-and-animations.bundle" */ './components/LoadersAndAnimations');
 
@@ -95,8 +95,8 @@ export default {
             component: CreateClients
         },
         {
-            path: '/updateClients',
-            component: updateClients
+            path: '/UpdateClients',
+            component: UpdateClients
         }
     ]
 };
