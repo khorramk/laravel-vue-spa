@@ -19,8 +19,8 @@
             }
         },
         created () {
-            axios.get('http://review-cakes.test/api/stats').then(({data}) => {
-                let {data} = response;
+            axios.get('http://review-cakes.test/api/stats').then(({info}) => {
+                let {infoData} = info.data;
                 this.lessons = data.lessons;
                 this.series = data.series;
             } );

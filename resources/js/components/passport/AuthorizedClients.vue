@@ -25,7 +25,7 @@
                             <tr v-for="token in tokens">
                                 <!-- Client Name -->
                                 <td style="vertical-align: middle;">
-                                    {{ token.client.name }}
+                                    {{ token }}
                                 </td>
 
                                 <!-- Scopes -->
@@ -88,19 +88,20 @@
              */
             getTokens() {
                 axios.get('/oauth/tokens')
-                        .then(response => {
-                            this.tokens = response.data;
-                        });
+                    .then(response => {
+                        this.tokens = response.data;
+                    });
             },
 
             /**
              * Revoke the given token.
              */
             revoke(token) {
+                console.log(token);
                 axios.delete('/oauth/tokens/' + token.id)
-                        .then(response => {
-                            this.getTokens();
-                        });
+                    .then(response => {
+                        this.getTokens();
+                    });
             }
         }
     }

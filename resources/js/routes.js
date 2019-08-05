@@ -9,6 +9,11 @@ import NotFound from './components/NotFound';
 import Home from './components/Home'; 
 import About from './components/About'; 
 import SiteStats from './components/SiteStats'; 
+import Clients from './components/passport/Clients';
+import Authorized from './components/passport/AuthorizedClients';
+import PersonalAccessTokens from './components/passport/personalAccessTokens';
+import CreateClients from './components/passport/CreateClients';
+
 let LoadersAndAnimations = () =>
     import(/* webpackChunkName: "loaders-and-animations.bundle" */ './components/LoadersAndAnimations');
 
@@ -72,6 +77,26 @@ export default {
         {
             path: '/site-stats',
             component: SiteStats
+        },
+        {
+            path: '/Clients',
+            component: Clients
+        },
+        {
+            path: '/Authorized',
+            component: Authorized
+        },
+        {
+            path: '/personalTokens',
+            component: PersonalAccessTokens
+        }, 
+        {
+            path: '/CreateClients',
+            component: CreateClients
+        },
+        {
+            path: '/updateClients',
+            component: updateClients
         }
     ]
 };

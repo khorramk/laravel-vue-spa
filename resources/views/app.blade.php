@@ -18,46 +18,37 @@
 		</header>
 		<div class="container px-8 pb-10">
 			<main class="flex">
-				<aside class="w-64 pt-8">
-					<section class="mb-10 ">
-						<h5 class="uppercase font-bold mb-3 text-base">Brand</h5>
+				<aside class="w-64 pt-8 border-2 px-5 mx-2 rounded">
+					<section class="mb-10 px-12">
+						<h5 class="uppercase font-bold mb-3 text-base">clients info</h5>
 						<ul class="list-reset" >
-							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/" exact>Home</router-link>
+							<li class="text-sm leading-loose ">
+								<router-link class="text-black rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3"  to="/" exact>⌂</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/about">About</router-link>
+								<router-link class="text-black rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3 mt-3"  to="/about">?</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/Logo">Logo</router-link>
+								<router-link class="text-black rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3"  to="/CreateClients">+</router-link>
 							</li>
 							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/Logo-symbol">Logo-symbol</router-link>
+								<router-link class="text-black rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3"  to="/UpdateClients">🗘</router-link>
 							</li>
-							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/Colors">Colors</router-link>
-							</li>
-							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/Typography">Typography</router-link>
-							</li>
-						</ul >
-
-					</section>
-					<section>
-						<h5 class="uppercase font-bold mb-3 text-base">Doodles</h5>
-						<ul  class="list-reset">
-							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">Mascots</router-link></li>
-							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">Illustrations</router-link></li>
-							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">Loaders</router-link></li>
-							<li class="text-sm leading-loose"><router-link class="text-black"  to="/1">animations</router-link></li>
-							
 						</ul>
-						<h5 class="uppercase font-bold mb-3 text-base">Stats</h5>
-						<ul class="list-reset" >
-							<li class="text-sm leading-loose">
-								<router-link class="text-black"  to="/site-stats">Site-stats</router-link>
-							</li>
-						</ul >
+					</section>
+					<section class="mb-10 px-12">
+						    <h5 class="uppercase font-bold mb-3 text-base">Tokens</h5>
+							<ul class="list-reset">
+								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
+									<router-link class="text-black"  to="/ClientsList">🧔</router-link>
+								</li>
+								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
+									<router-link class="text-black"  to="/Authorized">✓</router-link>
+								</li>
+								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
+									<router-link class="text-black"  to="/personalTokens">🔑</router-link>
+								</li>
+							</ul>
 					</section>
 				</aside>
 				<div class="primary flex-1">
