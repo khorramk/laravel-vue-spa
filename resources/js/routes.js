@@ -8,12 +8,10 @@ import Wallpapers from './components/Wallpapers';
 import NotFound from './components/NotFound';
 import Home from './components/Home'; 
 import About from './components/About'; 
-import SiteStats from './components/SiteStats'; 
-import Clients from './components/passport/Clients';
-import Authorized from './components/passport/AuthorizedClients';
-import PersonalAccessTokens from './components/passport/personalAccessTokens';
-import CreateClients from './components/passport/CreateClients';
-import UpdateClients from './components/passport/UpdateClients'
+import SiteStats from './components/SiteStats';
+import Clients from './components/auth/Clients';
+import CreateClients from './components/auth/CreateClients';
+import UpdateClients from './components/auth/updateClients' 
 let LoadersAndAnimations = () =>
     import(/* webpackChunkName: "loaders-and-animations.bundle" */ './components/LoadersAndAnimations');
 
@@ -67,10 +65,6 @@ export default {
             component: Wallpapers
         },
         {
-            path: '/',
-            component: Home
-        },
-        {
             path: '/about',
             component: About
         },
@@ -79,24 +73,22 @@ export default {
             component: SiteStats
         },
         {
-            path: '/Clients',
-            component: Clients
+            path: '/update',
+            component: UpdateClients
         },
-        {
-            path: '/Authorized',
-            component: Authorized
-        },
-        {
-            path: '/personalTokens',
-            component: PersonalAccessTokens
-        }, 
         {
             path: '/CreateClients',
             component: CreateClients
         },
         {
-            path: '/UpdateClients',
-            component: UpdateClients
+            path: '/Clients',
+            component: Clients
+        },
+        {
+            path: '/',
+            component: Home
         }
+
+       
     ]
 };
