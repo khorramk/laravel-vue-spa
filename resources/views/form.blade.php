@@ -15,6 +15,7 @@
             
         </div>
         <input class="border-5 h-16 shadow-md" type="text" name="password" placeholder="password">
+        <input type="email" name="email" id="">
         <button type="submit" class="w-1/2 p-3 bg-teal-light text-black rounded mt-6">Login</button>
     </form>
 </body>

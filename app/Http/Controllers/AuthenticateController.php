@@ -4,27 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\User;
 
 class AuthenticateController extends Controller
 {
-    /*
-     * Handle an authentication attempt.
-     *
-     * @param  \Illuminate\Http\Request $request
-     *
-     * @return Response
+    /**
+     * @param Request $request
+     * @return store
      */
-    public function authenticate(Request $request)
+    public function register(Request $request)
     {
+        $password = Hash::make($request->password);
+        ;
+        $user = new User;
+        $user->name = $request->user;
+        $user->password = $password;
+        $user->email = $request->email; //hashed password.
+        $user->save();
         
-        $credentials = $request->only('name', 'password');
-        dd($credentials);
-        if (Auth::attempt($credentials)) {
-            // Authentication passed...
-            dd('success');
-            return redirect()->intended('/home');
-        }
-        dd('failed');
+        Auth::login($user,true);
     }
 
 }
