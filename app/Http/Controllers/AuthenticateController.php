@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use App\User;
 
 class AuthenticateController extends Controller
@@ -20,7 +21,7 @@ class AuthenticateController extends Controller
         $user = new User;
         $user->name = $request->user;
         $user->password = $password;
-        $user->email = $request->email; //hashed password.
+        $user->email = $request->email; 
         $user->save();
         
         Auth::login($user,true);
