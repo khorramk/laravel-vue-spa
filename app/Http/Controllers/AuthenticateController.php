@@ -22,9 +22,16 @@ class AuthenticateController extends Controller
         $user->name = $request->user;
         $user->password = $password;
         $user->email = $request->email; 
+        $user->api_token = Str::random(60);
         $user->save();
         
         Auth::login($user,true);
+        return redirect('/getToken');
     }
 
+    public function getToken(Request $request)
+    {
+        $user = User::find($request->id);
+        return view('/getToken')->with('token', $user->api_token);
+    }
 }

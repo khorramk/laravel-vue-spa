@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getToken</title>
+</head>
+<body>
+    <form action="/api/tokenRequest" method="GET">
+        <input type="hidden" name="id" value="6">
+        <button type="submit">get Token</button>
+    </form>
+    @isset($token)
+    {{$token}}
+    @endisset
+    
+</body>
+</html>

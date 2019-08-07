@@ -22,5 +22,10 @@ Auth::routes();
 Route::get('/form-requests', function(){
     return view('form');
 });
-
-
+/**
+ * gets the token from the database
+ * @return view with $token
+ */
+Route::get('/getToken', function(){
+    return view('getToken');
+});
