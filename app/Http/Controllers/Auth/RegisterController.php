@@ -65,7 +65,6 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'password' => Hash::make($data['password']),
-            'api_token' => Str::random(60),
         ]);
     }
 

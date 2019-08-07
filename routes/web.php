@@ -23,3 +23,6 @@ Route::get('/form-requests', function(){
     return view('form');
 });
 
+Route::get('/{any}', function () {
+    return view('app');
+})->where('any', '.*');
