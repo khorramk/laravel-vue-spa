@@ -9,9 +9,7 @@ import NotFound from './components/NotFound';
 import Home from './components/Home'; 
 import About from './components/About'; 
 import SiteStats from './components/SiteStats';
-import Clients from './components/auth/Clients';
-import CreateClients from './components/auth/CreateClients';
-import UpdateClients from './components/auth/updateClients' 
+import Achievements from './components/Achievements';
 let LoadersAndAnimations = () =>
     import(/* webpackChunkName: "loaders-and-animations.bundle" */ './components/LoadersAndAnimations');
 
@@ -73,21 +71,14 @@ export default {
             component: SiteStats
         },
         {
-            path: '/update',
-            component: UpdateClients
-        },
-        {
-            path: '/CreateClients',
-            component: CreateClients
-        },
-        {
-            path: '/Clients',
-            component: Clients
-        },
-        {
             path: '/',
             component: Home
+        },
+        {
+            path: '/achievements',
+            component: Achievements
         }
+       
 
        
     ]

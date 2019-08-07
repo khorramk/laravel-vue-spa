@@ -15,17 +15,18 @@
 
 Auth::routes();
 
-// Route::get('/{any}', function () {
-//     return view('layouts.app');
-// })->where('any', '.*');
+Route::get('/{any}', function () {
+    return view('layouts.app');
+})->where('any', '.*');
 
-Route::get('/form-requests', function(){
-    return view('form');
-});
-/**
- * gets the token from the database
- * @return view with $token
- */
-Route::get('/getToken', function(){
-    return view('getToken');
-});
+/**back end testing */
+// Route::get('/form-requests', function(){
+//     return view('form');
+// });
+// /**
+//  * gets the token from the database
+//  * @return view with $token
+//  */
+// Route::get('/getToken', function(){
+//     return view('getToken');
+// });

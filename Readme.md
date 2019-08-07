@@ -26,3 +26,7 @@
     - /form-requests
     for the routes involving api requests got to this:
     - /getToken
+
+# front end 
+     using vuejs the app will be just getting the client info and updating them
+     and a ui for generating APi

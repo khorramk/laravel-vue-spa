@@ -31,16 +31,7 @@
                             <router-link to="/">home</router-link>
                         </li>
                         <li>
-                            <router-link to="/about">about</router-link>
-                        </li>
-                        <li>
-                            <router-link to="/update">update</router-link>
-                        </li>
-                        <li>
-                            <router-link to="/createClients">CreateClients</router-link>
-                        </li>
-                        <li>
-                            <router-link to=""></router-link>
+                            <router-link>achievments</router-link>
                         </li>
                     </ul>
                 </nav>

@@ -22,9 +22,9 @@
         },
         methods: {
             fetchAchievments () {
-                axios.get(`http://review-cakes.test/api/achievments?api_token=${this.token}`)
+                axios.get(`/api/fetchAchievements?api_token=${this.token}`)
                     .then((reponse => {
-                    this.achievment = reponse.data;
+                        this.achievment = reponse.data;
                     }));
             },
         }

@@ -24,14 +24,28 @@ class AuthenticateController extends Controller
         $user->email = $request->email; 
         $user->api_token = Str::random(60);
         $user->save();
-        
-        Auth::login($user,true);
-        return redirect('/getToken');
+
+        Auth::user($user,true);
+        dd(Auth::user()->id);
+        return redirect('/token');
     }
 
-    public function getToken(Request $request)
+    public function getToken(User $user)
     {
-        $user = User::find($request->id);
-        return view('/getToken')->with('token', $user->api_token);
+        dd(Auth::getAuthIdentifier());
+        return $user;
+       
+    }
+
+    public function updateToken(Request $request)
+    {
+        $token = Str::random(60);
+
+        $request->user()->forceFill([
+            'api_token' => hash('sha256', $token),
+        ])->save();
+
+        return ['token' => $token];
+       
     }
 }
