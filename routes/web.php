@@ -13,11 +13,11 @@
 
 
 
-Auth::routes();
 
-Route::get('/{any}', function () {
-    return view('layouts.app');
-})->where('any', '.*');
+
+// Route::get('/{any}', function () {
+//     return view('layouts.app');
+// })->where('any', '.*');
 
 /**back end testing */
 // Route::get('/form-requests', function(){
@@ -30,3 +30,10 @@ Route::get('/{any}', function () {
 // Route::get('/getToken', function(){
 //     return view('getToken');
 // });
+Route::get('/', function(){
+    return view('register-form');
+})->name('register');
+
+Route::get('/getToken/{user}', function($user){
+    return view('getToken')->with('user', $user);
+})->name('getToken');

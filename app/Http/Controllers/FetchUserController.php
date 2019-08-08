@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class AchievementsController extends Controller
+use App\User;
+class FetchUserController extends Controller
 {
-    //
     public function fetch()
     {
-        
+        $users = User::all();
+
+        return $user;
     }
 }

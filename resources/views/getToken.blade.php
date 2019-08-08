@@ -7,13 +7,17 @@
     <title>getToken</title>
 </head>
 <body>
-    <form action="/api/tokenRequest" method="GET">
-        <input type="hidden" name="id" value="6">
+    <form action="/api/generateTokens" method="POST">
+        @method('PATCH')
+        @csrf
+  
         <button type="submit">get Token</button>
     </form>
+   
     @isset($token)
     {{$token}}
     @endisset
     
+        
 </body>
 </html>

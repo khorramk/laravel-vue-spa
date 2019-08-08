@@ -13,7 +13,7 @@
         },
         methods: {
             generate() {
-                axios.get('/generateTokens');
+                axios.get('/api/generateTokens').then((response.data));
                 return 0
             }
         },

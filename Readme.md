@@ -30,3 +30,7 @@
 # front end 
      using vuejs the app will be just getting the client info and updating them
      and a ui for generating APi
+
+#back end
+    in registerController is responsible for registering users in api folder
+    in tokenController is responsible for generating token by pressing button
