@@ -8,6 +8,9 @@ use App\Models\Passport\PersonalAccessClient;
 use Laravel\Passport\Passport;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Auth;
+use App\User;
+use Illuminate\Http\Request;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -27,6 +30,11 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+
+        $this->registerPolicies();
+
+        Auth::viaRequest('token', function ($request) {
+            return User::where('api_token', $request->api_token)->first();
+        });
     }
 }

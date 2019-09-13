@@ -7,16 +7,19 @@
     <title>getToken</title>
 </head>
 <body>
-    <form action="/api/generateTokens" method="POST">
-        @method('PATCH')
-        @csrf
-  
-        <button type="submit">get Token</button>
+    <form action="/api/generateTokens/" method="POST">
+            @method('PATCH')
+            @csrf
+    
+            <button type="submit">get Token</button>
     </form>
-   
-    @isset($token)
-    {{$token}}
-    @endisset
+
+   @isset($Token)
+       {{$token}}
+   @endisset 
+       
+    
+    
     
         
 </body>

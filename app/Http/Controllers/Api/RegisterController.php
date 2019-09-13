@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+
 class RegisterController extends Controller
 {
    /**
@@ -21,6 +22,6 @@ class RegisterController extends Controller
         $user->save();
 
        
-         return redirect()->route('getToken', ['user' => $user]);
+         return view('/app', ['user' => $user]);
     }
 }

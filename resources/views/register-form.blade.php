@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <form class="flex flex-col px-4" action="/api/registerUsers" method="POST">
-        <label for="">create your credentials</label>
-        <div class="">
-            <input class="border-5 mt-4 mb-2" type="text" name="user" id="" placeholder="user">
+    
+    <h1 class="">register here</h1>
+    <div class="container border-8 mt-12">
+        <form class="flex flex-col px-4" action="/api/registerUsers" method="POST">
+            <label for="">create your credentials</label>
             
-        </div>
-        <input class="border-5 h-16 shadow-md" type="text" name="password" placeholder="password">
-        <input type="email" name="email" id="">
-        <button type="submit" class="w-1/2 p-3 bg-teal-light text-black rounded mt-6">Login</button>
-    </form>
+            <input class=" border border-5 mt-4 mb-2" type="text" name="user" id="" placeholder="user">
+                
+            
+            <input class="border-5 h-16 shadow-md border" type="text" name="password" placeholder="password">
+            <input class="border shadow-md" type="email" name="email" id="">
+            <button type="submit" class="w-1/2 p-3 bg-teal-light text-black rounded mt-6">Login</button>
+        </form>
+    </div>
+   
+    
+    
 </body>
 </html>

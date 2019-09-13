@@ -1,11 +1,13 @@
 <template>
     <div>
         <h1>
-            achievments
+            achievements
         </h1>
-        <input type="text" name="token" id="" @key-up.enter="fetchAchievments" placeholder="your laracast api token" v-model="token">
+        <input type="text" name="token" id="" @key-up.enter="fetchAchievements" placeholder="your laracast api token" v-model="token">
         <ul>
-            <li v-for="(achievment, i) in achievments" :key="i" v-text="achievment">
+            <li 
+            
+            v-for="(achievement, i) in achievements" :key="i" v-text="achievement">
 
             </li>
         </ul>
@@ -16,19 +18,19 @@
     export default {
         data() {
             return {
-                achievment: [],
+                achievements: [],
                 token: ''
             };
         },
-        methods: {
-            fetchAchievments () {
-                axios.get(`/api/fetchAchievements?api_token=${this.token}`)
-                    .then((reponse => {
-                        this.achievment = reponse.data;
-                    }));
-            },
+        mounted(){
+            axios.get('http://asset.test/api/achievements?api_token=test')
+            .then((response => this.achievements = response.data))
+            .catch((err)=> console.log(err));
+    
         }
-    }
+           
+    };
+    
 </script>
 
 <style lang="scss" scoped>

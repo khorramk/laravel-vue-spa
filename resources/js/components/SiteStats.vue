@@ -18,16 +18,12 @@
                 lessons: 0
             }
         },
-        created () {
-            axios.get('http://review-cakes.test/api/stats').then(({info}) => {
-                let {infoData} = info.data;
-                this.lessons = data.lessons;
-                this.series = data.series;
-            } );
+        mounted() {
+            axios.get('http://asset.test/api/stats').then((resp)=> {
+                this.series = resp.data.series;
+                this.lessons = resp.data.lessons;
+            }).catch((err)=> console.log(err))
+                                                    
         },
     }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

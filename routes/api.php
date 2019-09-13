@@ -22,8 +22,22 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  */
 Route::post('/registerUsers', 'api\RegisterController@register');
 Route::get('/fetchAcheivements', 'FetchUserController@fetch');
+Route::get('stats', function(){
+    return [
+        'series' => 200,
+        'lessons' => 1300
+    ];
+});
+Route::middleware('auth:api')->get('/achievements', function(Request $request){
+        return [
+            'gold',
+            'silver',
+            'bronze',
+        ];
+});
 
-Route::patch('/generateTokens/{user}', 'api\TokenController@generate')->middleware('auth:api');
+Route::patch('/generateTokens', 'api\TokenController@update');
+
 /**
  * these routes are for getting clients info to show to dashboard
  */

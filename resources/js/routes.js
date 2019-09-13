@@ -71,15 +71,18 @@ export default {
             component: SiteStats
         },
         {
-            path: '/',
+            path: '/home',
             component: Home
         },
         {
             path: '/achievements',
             component: Achievements
-        }
+        },
        
-
+        {
+            path: '/main',
+            
+        }
        
     ]
 };

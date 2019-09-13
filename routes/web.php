@@ -12,12 +12,16 @@
 */
 
 
+Route::get('/register', function(){
+    return view('register-form');
+});
+Route::get('/getToken', function(){
+    return view('getToken');
+})->name('getToken');
 
-
-
-// Route::get('/{any}', function () {
-//     return view('layouts.app');
-// })->where('any', '.*');
+Route::get('/{any}', function () {
+    return view('app');
+})->where('any', '.*');
 
 /**back end testing */
 // Route::get('/form-requests', function(){
@@ -30,10 +34,12 @@
 // Route::get('/getToken', function(){
 //     return view('getToken');
 // });
-Route::get('/', function(){
-    return view('register-form');
-})->name('register');
+// Route::get('/', function(){
+//     return view('register-form');
+// })->name('register');
 
-Route::get('/getToken/{user}', function($user){
-    return view('getToken')->with('user', $user);
-})->name('getToken');
+
+
+// Route::get('/main', function(){
+//     return view('app');
+// });

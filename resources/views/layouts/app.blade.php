@@ -31,7 +31,7 @@
                             <router-link to="/">home</router-link>
                         </li>
                         <li>
-                            <router-link>achievments</router-link>
+                            <router-link>achievements</router-link>
                         </li>
                     </ul>
                 </nav>

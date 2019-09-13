@@ -40,10 +40,10 @@
 						    <h5 class="uppercase font-bold mb-3 text-base">Tokens</h5>
 							<ul class="list-reset">
 								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
-									<router-link class="text-black"  to="/ClientsList">🧔</router-link>
+									<router-link class="text-black"  to="/site-stats">🧔</router-link>
 								</li>
 								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
-									<router-link class="text-black"  to="/Authorized">✓</router-link>
+									<router-link class="text-black"  to="/achievements">✓</router-link>
 								</li>
 								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
 									<router-link class="text-black"  to="/personalTokens">🔑</router-link>
