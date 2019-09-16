@@ -23,7 +23,7 @@
             };
         },
         mounted(){
-            axios.get('http://asset.test/api/achievements?api_token=test')
+            axios.get('http://asset.test/api/achievements?api_token=osVj8XI3hanAgmKG3dSlGQ6wxLZcUoRryA68fVtNXwyTIkkgE2LvMiGyE8MP')
             .then((response => this.achievements = response.data))
             .catch((err)=> console.log(err));
     

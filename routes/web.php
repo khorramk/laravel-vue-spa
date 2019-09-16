@@ -15,9 +15,7 @@
 Route::get('/register', function(){
     return view('register-form');
 });
-Route::get('/getToken', function(){
-    return view('getToken');
-})->name('getToken');
+
 
 Route::get('/{any}', function () {
     return view('app');

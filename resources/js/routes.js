@@ -10,6 +10,7 @@ import Home from './components/Home';
 import About from './components/About'; 
 import SiteStats from './components/SiteStats';
 import Achievements from './components/Achievements';
+import GetToken from './components/GetToken';
 let LoadersAndAnimations = () =>
     import(/* webpackChunkName: "loaders-and-animations.bundle" */ './components/LoadersAndAnimations');
 
@@ -82,6 +83,10 @@ export default {
         {
             path: '/main',
             
+        },
+        {
+            path: '/getToken',
+            component: GetToken
         }
        
     ]

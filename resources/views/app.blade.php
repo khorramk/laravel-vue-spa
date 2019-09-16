@@ -46,7 +46,7 @@
 									<router-link class="text-black"  to="/achievements">✓</router-link>
 								</li>
 								<li class="text-sm leading-loose rounded-full w-16 h-16 flex items-center justify-center border-2 text-2xl mt-3">
-									<router-link class="text-black"  to="/personalTokens">🔑</router-link>
+									<router-link class="text-black"  to="/getToken">🔑</router-link>
 								</li>
 							</ul>
 					</section>

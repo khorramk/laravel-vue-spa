@@ -36,7 +36,9 @@ Route::middleware('auth:api')->get('/achievements', function(Request $request){
         ];
 });
 
-Route::patch('/generateTokens', 'api\TokenController@update');
+Route::get('/generateTokens', function(){
+    return ['token' => str_random(60)];
+});
 
 /**
  * these routes are for getting clients info to show to dashboard

@@ -1,8 +1,12 @@
 <template>
     <div>
-        <form v-on:submit.prevent>
-            <input type="submit" value="get your token">
+        <form v-on:submit.prevent="getToken">
+            <input type="submit" value="get your token for 5 seconds">
         </form>
+
+        <div class="div" v-text="key">
+        
+        </div>
     </div>
 </template>
 
@@ -10,13 +14,19 @@
     export default {
         data() {
             return {
-                key: value
+                key: '',
             }
         },
         methods: {
             getToken() {
-                axios.patch('api/generateTokens').then((resp)=> resp);
-            }
+                axios.get('/api/generateTokens', {
+                
+                    
+                }).then((resp)=>  this.key = resp.data.token).then(()=> setTimeout(() => {
+                    window.location.href = '/getToken';
+                }, 5000));
+            },
+           
         },
     }
 </script>

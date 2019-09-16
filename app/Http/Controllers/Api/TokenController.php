@@ -31,11 +31,12 @@ class TokenController extends Controller
 
     public function update(Request $request)
     {
+       
        User::first()->fill([
            'api_token' => $token = str_random(60),
        ])->save();
 
        
-       return view('getToken')->with('token', $token);
+       return ['token' => $token];
     }
 }
